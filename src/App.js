@@ -10,8 +10,6 @@ import Form from 'react-bootstrap/Form';
 function App() {
   //consulta la información de las entradas
   let {data, loading, error} = useFetch('http://127.0.0.1:8000/api/entradas');
-  //const [lista, setLista] = useState(data);
-//console.log(lista);
 
   //hook y funciones para mostrar el modal de información
   const [showModalInfo, setShowModalInfo] = useState(false);
